@@ -1,0 +1,19 @@
+# Build output
+build/
+*.exe
+*.o
+*.obj
+a.out
+
+# Temporary tests, drivers, and stress-test files
+scratch/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

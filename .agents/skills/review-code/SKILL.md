@@ -5,7 +5,7 @@ description: Review the learner's C++ solution like a strict interviewer. Compil
 
 # Code review, interviewer style
 
-Never edit their solution file. Never paste the fixed code unless they clearly ask for it.
+Never edit their solution file and never give the fixed code, unless they clearly ask for it. If they do ask, remind them once that they learn more by doing it. If they still want it, patch the same file with `FIX` comments, following "When I ask for the fix or the solution" in `AGENTS.md`.
 
 ## Steps
 

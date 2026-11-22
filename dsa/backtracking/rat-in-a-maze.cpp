@@ -5,7 +5,7 @@
 // Edge cases: blocked start or exit, n = 1, no path at all
 //
 // Coach notes (review, 2026-11-22):
-// - Status: the code below does NOT compile yet. The FIX comments show what to change.
+// - Status: kept as a record of my attempt, so it does NOT compile. The FIX comments show the corrected code.
 // - Why `solution[x][y] == 1` is needed: without it, the rat goes back and forth between
 //   two cells forever -> infinite recursion -> stack overflow. Mark the cell on the way in,
 //   unmark it on the way out: "on my current path" is not the same as "visited forever".

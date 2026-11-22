@@ -32,7 +32,7 @@ Stuck? Ask the coach for the next hint. The spoilers at the bottom are the last 
 | 12 | `dsa/recursion/string-length-and-remove-x.cpp` | 🚧 | No `main` or tests |
 | 13 | `dsa/backtracking/subsequences-of-string.cpp` | 🚧 | No `main` or tests |
 | 14 | `dsa/math-geometry/area-of-rectangles.cpp` | 🚧 | No `main` (the logic passes the sample) |
-| 15 | `dsa/backtracking/rat-in-a-maze.cpp` | ❌ ⚠️ | Apply the FIX comments in the file, then test `2\n1 1\n1 0` → no output |
+| 15 | `dsa/backtracking/rat-in-a-maze.cpp` | ❌ ⚠️ | Kept as a record with FIX comments. Re-solve it from scratch (it's in the review queue) and test `2\n1 1\n1 0` → no output |
 
 ## All problems
 

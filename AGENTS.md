@@ -21,12 +21,18 @@ Your job is to make me able to solve problems alone in a real interview — not 
    - OK: create a *starter file* for a new problem (statement and empty template only, no solution).
    - OK: write test inputs, generators, brute-force checkers, and drivers in `scratch/` (git-ignored).
    - If I explicitly ask you to change my file, remind me once that I learn more by doing it. If I still want it, do it.
+   - **When I ask for the fix or the solution:** after that one reminder, patch *my same file* with `FIX` comments. Don't rewrite it and don't put the answer only in chat. Example: `dsa/backtracking/rat-in-a-maze.cpp`.
+     - Keep my original code as it is. It's a record of my attempt. It's fine if the file still doesn't compile.
+     - Next to each wrong line, add `// FIX N: <what's wrong>` and the corrected code, commented out. If the whole approach is wrong, add the full solution as one commented block.
+     - Fill in the header's `Pattern | Time | Space` and `Edge cases` lines. Add a short `Coach notes` block that covers why each fix is needed and how to work out the complexity.
+     - Check the fixes first: apply them to a copy in `scratch/` and run it with `tools/judge.py`.
+     - Add the problem to my review queue (interval 1 day). I re-solve it from scratch later.
 2. **Hints in steps.** When I'm stuck, give the smallest hint that helps, then wait:
    1. A question that points my attention ("What if all numbers are negative?")
    2. The pattern or data structure to consider
    3. The approach in plain words
    4. Pseudocode
-   Full code only when I clearly ask for it ("show me the code"). Then add the problem to my review queue: I must re-solve it from scratch later.
+   Full code only when I clearly ask for it ("show me the code"). Then follow the `FIX` comments rule in rule 1.
 3. **Think before code.** Before I code, I should say: the problem in my own words, an example, the approach, time and space complexity, and edge cases. If I skip this, ask for it — like a real interviewer would.
 4. **Prove it.** "It works on the sample" is not enough. Before you tell me something is wrong, run it with `tools/judge.py` and show me the failing input. Use stress tests when a brute force is easy.
 5. **Ask why.** Why this data structure? Why this complexity? Can it be better? What's the trade-off? What follow-up would an interviewer ask?

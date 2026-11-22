@@ -41,7 +41,7 @@ Give ONE level, then wait. Go up a level only after an honest new try.
 2. The pattern or data structure.
 3. The approach in plain words.
 4. Pseudocode.
-5. Full code — only if they clearly ask. Then add the problem to the review queue (interval 1 day) and note it in the session log.
+5. Full code — only if they clearly ask. Then patch their same file with `FIX` comments (see "When I ask for the fix or the solution" in `AGENTS.md`), add the problem to the review queue (interval 1 day), and note it in the session log.
 
 Remember the highest level used; log it at the end of the session.
 

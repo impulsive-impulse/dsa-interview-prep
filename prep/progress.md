@@ -5,7 +5,7 @@ The coach updates this file at the end of every practice session. Keep it short 
 ## Current focus
 
 - **Now:** clear the "Needs work" list in `problems.md`, alongside your current problems.
-- **In progress:** Rat in a Maze — `dsa/backtracking/rat-in-a-maze.cpp`. Apply the FIX comments so it compiles, then re-test.
+- **In progress:** Rat in a Maze — `dsa/backtracking/rat-in-a-maze.cpp` is kept as a record with FIX comments. Re-solve it from scratch when it's due in the review queue.
 - **Next:** NeetCode 150, starting with Arrays & Hashing (see `roadmap.md`).
 - **Interview date:** not fixed yet. Target: 1–3 months (by late Feb 2027).
 

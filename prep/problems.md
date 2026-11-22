@@ -32,6 +32,7 @@ Stuck? Ask the coach for the next hint. The spoilers at the bottom are the last 
 | 12 | `dsa/recursion/string-length-and-remove-x.cpp` | 🚧 | No `main` or tests |
 | 13 | `dsa/backtracking/subsequences-of-string.cpp` | 🚧 | No `main` or tests |
 | 14 | `dsa/math-geometry/area-of-rectangles.cpp` | 🚧 | No `main` (the logic passes the sample) |
+| 15 | `dsa/backtracking/rat-in-a-maze.cpp` | ❌ ⚠️ | Apply the FIX comments in the file, then test `2\n1 1\n1 0` → no output |
 
 ## All problems
 
@@ -60,6 +61,7 @@ Stuck? Ask the coach for the next hint. The spoilers at the bottom are the last 
 | dp-1d | `dsa/dp-1d/max-product-subarray.cpp` | maxProductSubarray.cpp | LC 152 · NC | ✅ | The unused `maxSubArrayProduct2` is buggy — delete dead code. Why track the minimum? |
 | backtracking | `dsa/backtracking/n-queens.cpp` | BackTracking-1.cpp | LC 51 · NC | ✅ | It ignores input (n = 4 is fixed). Can `isPossible` be O(1)? |
 | backtracking | `dsa/backtracking/subsequences-of-string.cpp` | SubSequencesOfString.cpp | ≈ LC 78 · NC | 🚧 | How many subsequences are there, and what is the total time? |
+| backtracking | `dsa/backtracking/rat-in-a-maze.cpp` | RatMaze.cpp | ≈ GfG Rat in a Maze | ❌ ⚠️ | Why is the depth n², not n? How would you return the paths as strings like "DRDR"? |
 | backtracking | `dsa/backtracking/keypad-combinations.cpp` | KeypadCombination.cpp | LC 17 · NC | ✅ | What should input `21` print? |
 | math-geometry | `dsa/math-geometry/area-of-rectangles.cpp` | area-of-rectangles.cpp | LC 223 | 🚧 | Can `x2 - x1` overflow before the `1LL *`? |
 

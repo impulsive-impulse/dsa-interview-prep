@@ -5,7 +5,7 @@ The coach updates this file at the end of every practice session. Keep it short 
 ## Current focus
 
 - **Now:** clear the "Needs work" list in `problems.md`, alongside your current problems.
-- **In progress:** Rat in a Maze — `RatMaze.cpp` in the repo root. When it's done, move it to `dsa/backtracking/rat-in-a-maze.cpp` and add it to `problems.md`.
+- **In progress:** Rat in a Maze — `dsa/backtracking/rat-in-a-maze.cpp`. Apply the FIX comments so it compiles, then re-test.
 - **Next:** NeetCode 150, starting with Arrays & Hashing (see `roadmap.md`).
 - **Interview date:** not fixed yet. Target: 1–3 months (by late Feb 2027).
 
@@ -15,11 +15,11 @@ Repeated mistakes. A weak spot is "fixed" after 3 clean problems in a row on it.
 
 | Weak spot | Evidence | Drill | Status |
 |---|---|---|---|
-| Calling it done without compiling and running | 2 files don't compile; `quick-sort.cpp` was never run; 6 files have no `main` | Before moving on: compile, run the samples, run 2 edge cases | suspected (first audit) |
+| Calling it done without compiling and running | `rat-in-a-maze.cpp` didn't compile (2026-11-22); 2 files don't compile; `quick-sort.cpp` was never run; 6 files have no `main` | Before moving on: compile, run the samples, run 2 edge cases | suspected (first audit) |
 | Edge cases: all-negative input, empty input | `kadane.cpp`, `k-concatenation-max-sum.cpp` | Before coding, list 3 edge cases. Test them after. | suspected (first audit) |
 | Integer types and overflow | `mind-bending-product.cpp` | For every variable, ask: what is the biggest value it can hold? | suspected (first audit) |
 | Checking complexity against the limits | `chef-restaurant.cpp`, `longest-consecutive-sequence.cpp`, `hussain-set.cpp` | Before coding, write: max n, then the complexity you need | suspected (first audit) |
-| Stack vs heap memory | `inversion-count.cpp` | Never use `int a[n]`; use `vector`. Big inputs mean no deep recursion | suspected (first audit) |
+| Stack vs heap memory | `inversion-count.cpp`, `rat-in-a-maze.cpp` (`int maze[n][n]`) | Never use `int a[n]`; use `vector`. Big inputs mean no deep recursion | suspected (first audit) |
 
 ## Review queue (spaced repetition)
 
@@ -34,6 +34,7 @@ Easy → next interval. Some gaps → same interval. Needed hints → back to 1 
 | Permutation and palindrome | `dsa/arrays-hashing/permutation-and-palindrome.cpp` | 2026-11-18 | 2026-11-26 | 3 | |
 | Keypad combinations | `dsa/backtracking/keypad-combinations.cpp` | 2026-11-21 | 2026-11-27 | 3 | |
 | N-Queens | `dsa/backtracking/n-queens.cpp` | 2026-11-22 | 2026-11-28 | 3 | Try the O(1) safety check |
+| Rat in a Maze | `dsa/backtracking/rat-in-a-maze.cpp` | 2026-11-22 | 2026-11-23 | 1 | Coach gave the fixes. Re-solve from scratch with `vector`, and do the bounds/blocked check before the destination check |
 
 ## Mock interviews
 
@@ -43,6 +44,13 @@ Easy → next interval. Some gaps → same interval. Needed hints → back to 1 
 ## Session log
 
 Newest first. 3–5 bullets per session.
+
+### 2026-11-22 — Rat in a Maze review
+- Didn't compile: `int maze[n][n]` (a VLA) passed as `int[][100]`. Logic bug: a blocked exit still printed a path (the destination check ran before the blocked check).
+- Asked the coach for the fixes. They're added as FIX comments in the file. Re-solve from scratch tomorrow.
+- Got right: the visited check stops infinite back-and-forth recursion.
+- New skill: recursion time = branching^depth. Missed at first: depth here is n² (a path can snake through every cell), not n. Wrote the notes in the file.
+- File moved to `dsa/backtracking/rat-in-a-maze.cpp`.
 
 ### 2026-11-22 — Setup
 - Repo organized into `dsa/<topic>/` folders. The coach setup was added (`AGENTS.md`, skills, `prep/`, `tools/judge.py`).

@@ -35,6 +35,7 @@ Easy → next interval. Some gaps → same interval. Needed hints → back to 1 
 | Keypad combinations | `dsa/backtracking/keypad-combinations.cpp` | 2026-11-21 | 2026-11-27 | 3 | |
 | N-Queens | `dsa/backtracking/n-queens.cpp` | 2026-11-22 | 2026-11-28 | 3 | Try the O(1) safety check |
 | Rat in a Maze | `dsa/backtracking/rat-in-a-maze.cpp` | 2026-11-22 | 2026-11-23 | 1 | Coach gave the fixes. Re-solve from scratch with `vector`, and do the bounds/blocked check before the destination check |
+| Crossword Puzzle | `dsa/backtracking/crossword-puzzle.cpp` | 2026-11-23 | 2026-11-24 | 1 | Coach gave the full solution. Re-solve from scratch: place word, recurse, undo only the cells you filled |
 
 ## Mock interviews
 
@@ -44,6 +45,12 @@ Easy → next interval. Some gaps → same interval. Needed hints → back to 1 
 ## Session log
 
 Newest first. 3–5 bullets per session.
+
+### 2026-11-23 — Crossword Puzzle
+- Started with only the grid reading. Asked for the full solution (hint level 5).
+- Coach added it as FIX comments: place a word, recurse, undo only the cells you filled. Tested on 2 HackerRank samples.
+- Key ideas: a word must fill its whole slot (check the cells before and after it), and crossing letters must match.
+- File moved to `dsa/backtracking/crossword-puzzle.cpp`. Re-solve from scratch tomorrow.
 
 ### 2026-11-22 — Rat in a Maze review
 - Didn't compile: `int maze[n][n]` (a VLA) passed as `int[][100]`. Logic bug: a blocked exit still printed a path (the destination check ran before the blocked check).

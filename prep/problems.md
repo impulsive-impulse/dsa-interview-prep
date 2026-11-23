@@ -33,6 +33,7 @@ Stuck? Ask the coach for the next hint. The spoilers at the bottom are the last 
 | 13 | `dsa/backtracking/subsequences-of-string.cpp` | 🚧 | No `main` or tests |
 | 14 | `dsa/math-geometry/area-of-rectangles.cpp` | 🚧 | No `main` (the logic passes the sample) |
 | 15 | `dsa/backtracking/rat-in-a-maze.cpp` | ❌ ⚠️ | Kept as a record with FIX comments. Re-solve it from scratch (it's in the review queue) and test `2\n1 1\n1 0` → no output |
+| 16 | `dsa/backtracking/crossword-puzzle.cpp` | 🚧 | Coach gave the full solution as FIX comments. Re-solve it from scratch (it's in the review queue) and pass the HackerRank samples |
 
 ## All problems
 
@@ -63,6 +64,7 @@ Stuck? Ask the coach for the next hint. The spoilers at the bottom are the last 
 | backtracking | `dsa/backtracking/subsequences-of-string.cpp` | SubSequencesOfString.cpp | ≈ LC 78 · NC | 🚧 | How many subsequences are there, and what is the total time? |
 | backtracking | `dsa/backtracking/rat-in-a-maze.cpp` | RatMaze.cpp | ≈ GfG Rat in a Maze | ❌ ⚠️ | Why is the depth n², not n? How would you return the paths as strings like "DRDR"? |
 | backtracking | `dsa/backtracking/keypad-combinations.cpp` | KeypadCombination.cpp | LC 17 · NC | ✅ | What should input `21` print? |
+| backtracking | `dsa/backtracking/crossword-puzzle.cpp` | Crossword.cpp | HackerRank Crossword Puzzle | 🚧 | Find all slots first, then match words to slots of the same length. Why is that faster? |
 | math-geometry | `dsa/math-geometry/area-of-rectangles.cpp` | area-of-rectangles.cpp | LC 223 | 🚧 | Can `x2 - x1` overflow before the `1LL *`? |
 
 ## Spoilers — coach notes

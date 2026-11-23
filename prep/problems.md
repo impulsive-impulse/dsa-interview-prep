@@ -34,6 +34,7 @@ Stuck? Ask the coach for the next hint. The spoilers at the bottom are the last 
 | 14 | `dsa/math-geometry/area-of-rectangles.cpp` | 🚧 | No `main` (the logic passes the sample) |
 | 15 | `dsa/backtracking/rat-in-a-maze.cpp` | ❌ ⚠️ | Kept as a record with FIX comments. Re-solve it from scratch (it's in the review queue) and test `2\n1 1\n1 0` → no output |
 | 16 | `dsa/backtracking/crossword-puzzle.cpp` | 🚧 | Coach gave the full solution as FIX comments. Re-solve it from scratch (it's in the review queue) and pass the HackerRank samples |
+| 17 | `dsa/math-geometry/centered-rectangles-area.cpp` | 💥 ⚠️ | Kept as a record with FIX comments. Re-solve and test `1\n3 2` → `6`, `1\n20000 1` → `20000` |
 
 ## All problems
 
@@ -66,6 +67,7 @@ Stuck? Ask the coach for the next hint. The spoilers at the bottom are the last 
 | backtracking | `dsa/backtracking/keypad-combinations.cpp` | KeypadCombination.cpp | LC 17 · NC | ✅ | What should input `21` print? |
 | backtracking | `dsa/backtracking/crossword-puzzle.cpp` | Crossword.cpp | HackerRank Crossword Puzzle | 🚧 | Find all slots first, then match words to slots of the same length. Why is that faster? |
 | math-geometry | `dsa/math-geometry/area-of-rectangles.cpp` | area-of-rectangles.cpp | LC 223 | 🚧 | Can `x2 - x1` overflow before the `1LL *`? |
+| math-geometry | `dsa/math-geometry/centered-rectangles-area.cpp` | RectangularArea.cpp | — | 💥 ⚠️ | If widths go up to 10^9, how do you solve it without the bucket array? |
 
 ## Spoilers — coach notes
 

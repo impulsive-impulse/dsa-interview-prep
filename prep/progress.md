@@ -36,6 +36,7 @@ Easy → next interval. Some gaps → same interval. Needed hints → back to 1 
 | N-Queens | `dsa/backtracking/n-queens.cpp` | 2026-11-22 | 2026-11-28 | 3 | Try the O(1) safety check |
 | Rat in a Maze | `dsa/backtracking/rat-in-a-maze.cpp` | 2026-11-22 | 2026-11-23 | 1 | Coach gave the fixes. Re-solve from scratch with `vector`, and do the bounds/blocked check before the destination check |
 | Crossword Puzzle | `dsa/backtracking/crossword-puzzle.cpp` | 2026-11-23 | 2026-11-24 | 1 | Coach gave the full solution. Re-solve from scratch: place word, recurse, undo only the cells you filled |
+| Centered rectangles area | `dsa/math-geometry/centered-rectangles-area.cpp` | 2026-11-23 | 2026-11-24 | 1 | Coach gave the fixes. Re-solve: index by full width, suffix max going backwards, `long long` |
 
 ## Mock interviews
 
@@ -45,6 +46,12 @@ Easy → next interval. Some gaps → same interval. Needed hints → back to 1 
 ## Session log
 
 Newest first. 3–5 bullets per session.
+
+### 2026-11-23 — Centered rectangles area review
+- Fixed the suffix-max direction yourself (the loop now goes backwards). Good.
+- Still failing: a crash at the largest width (`height[i+1]` past the end), overflow (`long` is 32-bit on Windows), and odd widths (`x/2` rounds down).
+- Asked for the fixes. They're added as FIX comments, with the complexity worked out. Stress-tested against a brute force (300 tests).
+- Same old weak spots: limits were never written down, and there was no overflow check.
 
 ### 2026-11-23 — Crossword Puzzle
 - Started with only the grid reading. Asked for the full solution (hint level 5).
